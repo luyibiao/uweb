@@ -1,0 +1,50 @@
+.icon-svg {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(/static/svg/sprite.png);
+  background-image: url(/static/svg/sprite.svg), none;
+  vertical-align: middle;
+}
+.icon-svg-android {
+  width: 16px;
+  height: 16px;
+  background-position: 0 0;
+}
+.icon-svg-iphone {
+  width: 16px;
+  height: 16px;
+  background-position: -32px 0;
+}
+.icon-svg-mobile1 {
+  width: 16px;
+  height: 16px;
+  background-position: -64px 0;
+}
+.icon-svg-mobile2 {
+  width: 16px;
+  height: 16px;
+  background-position: -96px 0;
+}
+.icon-svg-weixin {
+  width: 16px;
+  height: 16px;
+  background-position: -128px 0;
+}
+
+.icon-svg-wxApp{
+  width: 16px;
+  height: 16px;
+  background-position: -163px 0;
+}
+
+.icon-svg-wx-bind{
+  width: 17px;
+  height: 16px;
+  background-position: -197px 0;
+}
+
+.icon-svg-wx-run{
+  width: 16px;
+  height: 16px;
+  background-position: -233px 0;
+}

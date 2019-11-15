@@ -1,0 +1,45 @@
+.city-lists {
+	display: inline-block;
+	overflow: hidden;
+}
+.city-lists .city-item {
+	float: left;
+	margin: 15px 30px;
+}
+.city-lists .city-item .city-container {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	position: relative;
+	border: 1px solid #66befe;
+	border-radius: 10px;
+	background-color: rgba(32,156,255,.1);
+}
+.city-lists .city-item .city-container:hover {
+	background-color: #20a0ff;
+}
+.city-lists .city-item .city-container:hover .city {
+	color: #fff;
+}
+.city-lists .city-item .city {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+.state {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+.add-city {
+	float: right;
+	vertical-align: middle;
+}

@@ -1,0 +1,217 @@
+.relase-bg {
+  background-color: #f8f8f8;
+}
+.step-btn-bg {
+  background-color: #fdf1d5;
+  padding: 6px 0;
+}
+.relase-tabs {
+  &:extend(.relase-bg);
+  text-align: center;
+  border-top: 1px solid #dee5e7;
+  border-left: 1px solid #dee5e7;
+  .relase-tabs-item {
+    cursor: pointer;
+    padding: 10px;
+    border-right: 1px solid #dee5e7;
+    border-bottom: 1px solid #dee5e7;
+    &.is-active {
+      background-color: #fff;
+      border-bottom: 0;
+    }
+  }
+}
+// step1
+.goods-categorys {
+  text-align: center;
+  width: 720px;
+  margin: 0 auto;
+  padding: 30px 0 15px 15px;
+  .category-item {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 165px;
+    height: 45px;
+    line-height: 43px;
+    border: 1px solid #dee5e7;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    &:hover {
+      background-color: #fff;
+      cursor: pointer;
+    }
+    &.is-active {
+      line-height: 41px;
+      background-color: #fff;
+      border: 2px solid #ff3800;
+      color: #ff3800;
+    }
+  }
+  .icon-other {
+    position: relative;
+    &::after {
+      content: " ";
+      font-size: 0;
+      border-style: solid;
+      border-color: #999 transparent transparent;
+      border-width: 8px 6px;
+      margin-left: 4px;
+    }
+  }
+  .category-others {
+    position: relative;
+    &:hover {
+      .others {
+        display: block;
+      }
+    }
+    .others {
+      display: none;
+      text-align: left;
+      width: 600px;
+      padding: 15px 20px 7px;
+      position: absolute;
+      right: -1px;
+      top: 43px;
+      background-color: #fff;
+      border: 1px solid #dee5e7;
+      .el-radio {
+        margin-left: 0;
+        margin-bottom: 8px;
+        width: 100px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: 0;
+        width: 163px;
+        height: 1px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+// step2
+// 基础布局样式
+.info-box {
+  min-width: 1000px;
+}
+.info-group {
+  display: flex;
+  margin-bottom: 5px;
+  .info-group-title {
+    flex: 1;
+    text-align: center;
+    margin-right: 2px;
+    padding: 20px 10px;
+  }
+  .info-group-cont {
+    flex: 7;
+    padding: 15px 15px 10px;
+  }
+}
+
+// 规格 样式
+.standard {
+  padding: 15px 10px;
+  background-color: #fff;
+  .standard-item {
+    margin-bottom: 10px;
+  }
+  .standard-title {
+    position: relative;
+    padding: 5px 8px;
+    &:hover {
+      .close-btn {
+        display: block;
+      }
+    }
+  }
+  .standard-cont {
+    padding: 10px 5px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -12px;
+    background-color: #c2c2c2;
+    color: #fff;
+    display: none;
+  }
+}
+// 库存 样式
+.instock {
+  padding: 0 10px;
+}
+.instock-tabel {
+  width: 100%;
+  text-align: left;
+  td,
+  th {
+    border-right: 1px solid #e5e5e5;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  td {
+    padding: 5px 15px;
+  }
+  th {
+    padding: 0 15px;
+  }
+  thead tr,
+  tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  tbody tr {
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  td.instock-set {
+    text-align: left;
+  }
+}
+// 商品详情 图片样式
+.goods-imgs {
+  .img-box {
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 15px 0;
+    .close-btn {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      color: #fff;
+      background-color: #4a4a4a;
+      display: none;
+    }
+    &:hover {
+      .close-btn {
+        display: block;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+// 关闭图标
+.close-btn {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius: 50%;
+  transform: scale(0.7, 0.7);
+  cursor: pointer;
+}

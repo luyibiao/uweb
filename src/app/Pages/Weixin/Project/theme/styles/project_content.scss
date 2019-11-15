@@ -1,0 +1,61 @@
+.project-item-disabled{
+	.project-item:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.2);
+		z-index: 1;
+	}
+	.project-item:hover:after {
+		background-color: rgba(0,0,0,0);
+		z-index: -1;
+	}
+} 
+.project-item{
+	display: inline-block;
+	border: 1px solid #74befd;
+	overflow: hidden;
+	position: relative;
+	margin: 15px 15px 0 0; 
+}
+.project-left{
+	width: 80px;
+	float: left;
+}
+.project-logo{
+	width: 80px;
+	height: 80px;
+	display: block;
+}
+.project-text{
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+}
+.project-name{
+	max-height: 20px;
+	overflow: hidden;
+}
+.project-tips{
+	max-height: 17px;
+	overflow: hidden;
+}
+.project-info{
+	width: 150px;
+	height: 127px;
+	background-color: #f1f9ff;
+	position: relative;
+	overflow: hidden;
+}
+.project-state{
+	margin: 25px 0 15px;
+	font-size: 16px;
+}
+.project-more{
+	position: absolute;
+	right: 8px;
+	bottom: 5px;
+}

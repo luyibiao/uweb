@@ -1,0 +1,61 @@
+.disabled-lists.wx-project-lists .item:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.2);
+	z-index: 1;
+}
+.disabled-lists.wx-project-lists .item:hover:after {
+	background-color: rgba(0,0,0,0);
+	z-index: -1;
+}
+.wx-project-lists .item {
+	float: left;
+	margin: 20px 30px;
+	border: 1px solid #74befd;
+	position: relative;
+}
+.wx-project-lists .item .product {
+	height: 200px;
+	margin-right: -5px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.product .img {
+	width: auto;
+	height: 100%;
+}
+.product .text {
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+.product .text .item-name {
+	font-size: 18px;
+	margin: 0 auto 5px;
+}
+.info {
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	background-color: #f1f9ff;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.info .state {
+	margin: 70px auto 20px;
+	font-size: 18px;
+}
+.info .more {
+	position: absolute;
+	right: 8px;
+	bottom: 5px;
+}

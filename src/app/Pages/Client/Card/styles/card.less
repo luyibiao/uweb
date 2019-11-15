@@ -1,0 +1,40 @@
+.membership-content {
+  margin-left: 420px;
+  overflow: hidden;
+}
+.membership-form {
+  max-width: 700px;
+  padding: 10px 15px;
+  background: #f4f5f9;
+}
+.membership-content .title {
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.form-adjacent {
+  & + & {
+    margin-top: 22px;
+  }
+}
+.interest {
+  &:extend(.form-adjacent);
+  &-check {
+    float: left;
+  }
+  &-content {
+    margin-left: 70px;
+    & + & {
+      margin-top: 22px;
+    }
+    &:last-of-type {
+      margin-top: 0;
+    }
+    &-item {
+      display: inline-block;
+      & + & {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,475 @@
+.second-nav-list {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.body .el-menu--horizontal .el-menu-item.is-active {
+	color: #48576a;
+}
+.body .el-menu--horizontal .el-menu-item {
+	color: #20a0ff;
+	padding: 0;
+	margin: 0 20px;
+}
+.first-subnav .el-menu--horizontal>.el-menu-item:hover {
+	border-bottom: 2px solid transparent;
+}
+.first-subnav .el-menu--horizontal .el-menu-item {
+	border-bottom: 2px solid transparent;
+}
+.first-subnav .el-menu--horizontal>.el-menu-item.is-active  {
+	border-bottom: 2px solid #48576a;
+	background-color: #f8f8f8;
+}
+
+.el-switch__label *{
+	font-size: 12px;
+}
+
+.second-subnav .el-menu--horizontal>.el-menu-item,
+.second-subnav .el-menu--horizontal>.el-menu-item:hover {
+	border-bottom: 0;
+}
+.second-subnav .el-menu--horizontal>.el-menu-item.is-active  {
+	border-bottom: 0;
+	position: relative;
+}
+.second-subnav .el-menu--horizontal>.el-menu-item.is-active:before  {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	border-bottom: 6px solid #e7e7e7;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.second-subnav .el-menu--horizontal>.el-menu-item.is-active:after  {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -1px;
+	border-bottom: 6px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.bg-subnav {
+	background-color: #f8f8f8;
+}
+
+.ukao-tb-default {
+	max-width: 1000px;
+}
+.ukao-table{
+	font-size: 12px;
+}
+.ukao-tb-default .el-col,
+.ukao-tb-title {
+	padding: 10px 18px;
+}
+/* 自定义elm tabel样式 */
+.ukao-el-table {
+	border-top: 0;
+	border-left: 0;
+	color: #535353;
+	font-size: 12px;
+}
+.ukao-el-table:after {
+	display: none;
+}
+.ukao-el-table td {
+	padding: 10px 0;
+}
+.ukao-el-table th,
+.ukao-el-table th .cell {
+	background-color: #fff;
+	color: #000;
+	font-weight: normal;
+}
+.ukao-tabel-bg th,
+.ukao-tabel-bg th .cell{
+  background-color: #f8f8f8;	
+}
+.cell-pd0 .cell{
+	padding-left: 0;
+	padding-right: 0;
+}
+/* 自定义el-tabel样式 end */
+
+.ukao-table thead tr th {
+	text-align: left;
+	padding: 10px 18px;
+	box-sizing: border-box;
+}
+.ukao-table tbody tr td {
+	border-bottom: 1px solid #dee5e7;
+	padding: 10px 18px;
+	box-sizing: border-box;
+}
+.ukao-table tbody tr td:first-child {
+ 	color: #98a6ad;
+}
+
+.ukao-order-table {
+	text-align: left;
+	font-size: 12px;
+}
+.ukao-order-table .tr-content td {
+	border-top: 1px solid #dee5e7;
+	border-bottom: 1px solid #dee5e7;
+	border-right: 1px solid #dee5e7;
+	box-sizing: border-box;
+}
+.table-content-border-bottom{
+	border-bottom: 1px solid #dee5e7;
+}
+.border-1x{
+	border:1px solid #dee5e7;
+}
+.ukao-order-table thead tr{
+	background: #eef1f6;
+}
+.ukao-order-table .tr-th {
+	line-height: 24px;
+	background: #f8f8f8;
+}
+.ukao-order-table .tr-tip {
+	background: #fefaea;
+}
+.ukao-order-table th,
+.ukao-order-table td {
+	font-weight: normal;
+	padding: 8px;
+}
+
+
+/* 自定义el-popover */
+.no-pad-popover {
+	padding: 0;
+  /* background-color: #e5e5e5; */
+}
+
+
+
+.icon-smaller {
+	transform: scale(.7, .7);
+	vertical-align: middle;
+}
+
+
+.ukao-pt-md {
+	padding-top: 120px;
+}
+.ukao-pt-lg {
+	padding-top: 180px;
+}
+.ukao-padder {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* 覆盖eleme组件样式 */
+.el-menu--horizontal .el-menu-item:hover, 
+.el-menu--horizontal .el-submenu__title:hover {
+	background-color: transparent !important;
+}
+
+.el-breadcrumb__item .el-breadcrumb__item__inner, 
+.el-breadcrumb__item .el-breadcrumb__item__inner a {
+	color: #20a0ff;
+}
+.el-breadcrumb__item .el-breadcrumb__item__inner:hover, 
+.el-breadcrumb__item .el-breadcrumb__item__inner a:hover {
+	color: #48576a
+}
+
+
+/* 图片上传样式 */
+.u-avatar-uploader .el-upload {
+	width: 128px;
+	height: 128px;
+  line-height: 128px;
+  text-align: center;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.u-avatar-uploader .el-icon-plus {
+  font-size: 28px;
+  color: #8c939d;
+}
+.u-avatar-uploader .el-upload:hover,
+.u-mini-uploader .el-upload:hover {
+  border-color: #20a0ff;
+}
+.u-avatar-uploader .u-avatar,
+.u-mini-uploader .u-avatar {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.u-mini-uploader .el-upload {
+	width: 78px;
+	height: 78px;
+	line-height: 78px;
+	text-align: center;
+	border: 1px dashed #cfcfcf;
+	background-color: #f9fafc;
+  border-radius: 4px;
+}
+
+.u-mini-uploader .el-icon-plus {
+  color: #cfcfcf;
+  font-size: 20px;
+}
+
+.u-el-tabs .el-tabs--border-card>.el-tabs__header {
+	background-color: #fff;
+}
+.u-el-tabs .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+	border-color: transparent;
+	background-color: transparent;
+}
+.u-el-tabs .el-textarea .el-textarea__inner {
+	border: 0;
+	width: 100%;
+	height: 300px;
+}
+.u-el-tabs .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active:last-child {
+	border-right-color: #fff;
+}
+.u-el-tabs .el-popover, .u-el-tabs .el-tabs--border-card {
+	box-shadow: none;
+}
+
+.ukao-el-select.el-select {
+	width: 140px;
+}
+.ukao-el-input.el-input {
+	width: 240px;
+}
+.no-select {
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+.ukao-el-form-container {
+	max-width: 600px;
+}
+
+/* 弹窗尺寸 */
+.ukao-dialog .el-dialog--small {
+	width: 600px;
+}
+.ukao-dialog-lg{
+	width: 800px;
+}
+.ukao-dialog-md{
+	width:  600px;
+}
+
+.ukao-dialog-xs{
+	width: 450px;
+}
+
+/* tab选项卡 开始 */
+	.ukao-tabs-item:first-child {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.ukao-tabs-item:last-child {
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	.ukao-tabs-item {
+		float: left;
+		padding: 5px 10px;
+		border: 1px solid #dcdcdc;
+		margin-right: -1px;
+		-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	}
+	.ukao-tabs-item:hover {
+		color: #20a0ff;
+		cursor: pointer;
+	}
+	.ukao-tabs-item.is-active {
+		border-color: #20a0ff;
+		color: #20a0ff;
+	}
+	.ukao-tabs-item.is-active + .ukao-tabs-item {
+		border-left-color: #20a0ff;
+	}
+/* tab选项卡 结束 */
+
+/* 模拟微信端结构 begin */
+.ukao-sc-layout .sidebar {
+	float: left;
+	width: 350px;
+	position: relative;
+}
+.ukao-sc-layout .mainbar {
+	margin-left: 440px;
+	overflow: hidden;
+}
+.ukao-sc-layout .sidebar-bg {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+/* 模拟微信端结构 end */
+
+.l-h36 {
+	line-height: 36px;
+}
+
+/* 表单内状态控制 begin */
+.t-state {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #cfcfcf;
+}
+.t-state.t-state-success {
+	background-color: #36c924;
+}
+.t-state.t-state-danger {
+	background-color: #f64643;
+}
+/* 表单内状态控制 end */
+
+.m-t-vl {
+	margin-top: 80px;
+}
+
+.ukao-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 101;
+	background: rgba(0,0,0,0.5);
+}
+
+/* 表格 begin */
+	.uk-search {
+		line-height: 36px;
+		font-size: 12px;
+	}
+	.uk-search .uk-search-item{
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.uk-search-label{
+		display: inline-block;
+		vertical-align: top;		
+		margin-right: 10px;
+	}
+	.uk-search-content{
+		display: inline-block;
+		vertical-align: top;
+		/* font-size: 12px; */
+	}
+	.ukao-form {
+		line-height: 36px;
+	}
+	.ukao-form .ukao-form_label {
+		float: left;
+		width: 130px;
+		text-align: right;
+	}
+	.ukao-form_label{
+		font-size: 12px;
+	}
+	.ukao-form .ukao-form_content {
+		margin-left: 150px;
+	}
+/* 表格 end */
+
+.ukao-v-loading {
+	position: relative;
+	z-index: 999;
+}
+
+/* ukao upload样式 begin*/
+.ukao-upload-box-container {
+	padding: 30px 0;
+}
+.ukao-upload-box {
+	display: inline-block;
+	width: 240px;
+	height: 160px;
+	box-sizing: border-box;
+	border: 2px dashed #cfcfcf;
+	position: relative;
+}
+.ukao-upload-box:hover {
+	border-color: #20a0ff;
+}
+.ukao-upload-box .text {
+	position: absolute;
+	bottom: 28%;
+	left: 50%;
+}
+.ukao-upload-box:before,
+.ukao-upload-box:after {
+	content: '';
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #cfcfcf;
+	border-radius: 10px;
+}
+.ukao-upload-box:before {
+	width: 30px;
+	height: 3px;
+}
+.ukao-upload-box:after {
+	width: 3px;
+	height: 30px;
+}
+
+.mark {height:20px;line-height:20px;display:inline-block;text-align:center;border:1px;padding:0 14px;border-radius:14px;-moz-border-radius:14px;-webkit-border-radius:14px;-webkit-appearance:none}
+.mark_black,a.mark_black{color:#333;border: 1px solid #333;}
+.mark_white,a.mark_white{color:#fff;border: 1px solid #fff;}
+.mark_blue,a.mark_blue{color:#167efb;border: 1px solid #167efb;}
+.mark_grey,a.mark_grey{color:#666;border: 1px solid #ccc;}
+.mark_red,a.mark_red{color:#ff0000;border: 1px solid #ff0000;}
+.mark_green,a.mark_green{color:#3dc700;border: 1px solid #3dc700;}
+
+/* ukao upload样式 end*/
+.qrcode{
+	vertical-align:middle;
+}
+.wrap-valid-code{
+	line-height: 36px;
+}
+.wrap-valid-code .valid-code{
+	vertical-align: middle;
+	height: 28px;
+}
+.el-tabs__item,.ukao-tabs-item,.el-button,.el-form-item__label,.el-radio-button__inner,.el-cascader-menu__item,.el-select-dropdown__item,.el-checkbox__label,.wrapper,.el-radio__label,.module-public-sidebar,.u-select-list,.el-collapse-item__header,.text-md,.box-ft{
+	font-size: 12px;
+}
+.register_login_btn{
+	font-size: 14px;
+}
+.body .ukao-date-picker{
+	width: 270px;
+}

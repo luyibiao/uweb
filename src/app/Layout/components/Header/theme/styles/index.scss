@@ -1,0 +1,60 @@
+.nav {
+	margin-left: 40px;
+}
+.header-logo {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.header-nav {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.header-nav-list {
+	line-height: 20px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.header-nav-list .el-menu-item {
+	padding: 0;
+	margin: 10px 20px;
+	float: left;
+	height: 85px;
+	text-align: center;
+}
+.header-nav-list .item-list {
+	margin-left: -20px;
+	line-height: 20px;
+	display: inline-block;
+	cursor: pointer;
+}
+.header-nav-list .img {
+	display: inline-block;
+	width: 60px;
+	height: auto;
+}
+.header-nav-list .text {
+	text-align: center;
+	font-size: 14px;
+	width: 100%;
+}
+.header-nav-switch span {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.header-nav-switch i {
+	font-size: 12px;
+	vertical-align: middle;
+}
+.header-nav-switch.is-active i {
+	transform: rotate(90deg);
+}
